@@ -9,10 +9,6 @@ export const journalSlice = createSlice({
         active: null,
     }, 
     reducers: { 
-        savingNewNote: (state) => {
-            state.isSaving = false;
-            state.messageSaved = '';
-        },
         addNewEmptyNote: (state, action) => {
             state.isSaving = false;
             state.notes.push(action.payload);
@@ -57,7 +53,6 @@ export const {
     addNewEmptyNote,
     clearNotesLogout,
     deleteNoteById,
-    savingNewNote,
     setActiveNote,
     setNotes,
     setPhotosToActiveNote,
