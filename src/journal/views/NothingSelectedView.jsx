@@ -24,6 +24,5 @@ export const NothingSelectedView = () => {
           
       </Grid>
       
-      
   )
 }

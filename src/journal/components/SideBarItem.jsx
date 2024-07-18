@@ -4,7 +4,7 @@ import { Grid, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui
 import { TurnedInNot } from "@mui/icons-material"
 import { setActiveNote } from "../../store/journal/journalSlice"
 
-export const SideBarItem = ({ title='', body, id, note }) => {
+export const SideBarItem = ({ title='', body, id, imageUrls=[], date }) => {
     
     const newTitle = useMemo(() => {
         return title.length > 16
@@ -14,7 +14,7 @@ export const SideBarItem = ({ title='', body, id, note }) => {
 
     const dispatch = useDispatch();
     const onClickNote = () => {
-        dispatch(setActiveNote(note))
+        dispatch(setActiveNote({title, body, id, imageUrls, date}))
     }
 
   return (
