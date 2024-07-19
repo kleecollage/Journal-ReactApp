@@ -1,3 +1,6 @@
+.env
+.ent.test
+
 # Logs
 logs
 *.log

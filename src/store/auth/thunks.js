@@ -27,10 +27,10 @@ export const startCreatingUserWithEmailPassword = ({ email, password, displayNam
     }
 }
 
-export const startLoginWithEmailPassword = ({email, password, displayName}) => {
+export const startLoginWithEmailPassword = ({email, password}) => {
     return async (dispatch) => {
         dispatch(checkingCredentials());
-        const result = await loginWithEmailPassword({ email, password, displayName })
+        const result = await loginWithEmailPassword({ email, password })
         if (!result.ok) return dispatch(logout( result ))
         dispatch(login(result))
     }
