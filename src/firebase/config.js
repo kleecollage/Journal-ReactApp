@@ -26,17 +26,6 @@ const firebaseConfig = {
   appId: VITE_APPID,
 };
 
-// Testing
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCcEVJvs4A94g4TBfvJXtRrVScJvhPbAFU",
-//   authDomain: "proyect-testing-4e51f.firebaseapp.com",
-//   projectId: "proyect-testing-4e51f",
-//   storageBucket: "proyect-testing-4e51f.appspot.com",
-//   messagingSenderId: "677707429934",
-//   appId: "1:677707429934:web:e66e0fed6e8746789ac7bf"
-// };
-
-
 // Initialize Firebase
 export const FirebaseApp = initializeApp(firebaseConfig);
 export const FirebaseAuth = getAuth(FirebaseApp);
