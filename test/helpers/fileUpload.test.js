@@ -4,8 +4,8 @@ import { fileUpload } from "../../src/helpers/fileUpload";
 
 cloudinary.config({
     cloud_name: 'cloudinaryahs',
-    api_key: '736358749785698',
-    api_secret: 'g7HcySq0Z0x1cCVJNw11MaVDgGI',
+    api_key: '<API_KEY>',
+    api_secret: '<API_SECRET>',
     secure: true
 })
 
